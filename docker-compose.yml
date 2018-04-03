@@ -1,0 +1,8 @@
+version: '3'
+services:
+  artifactory:
+    image: docker.bintray.io/jfrog/artifactory-cpp-ce
+    ports:
+      - 8080:8080
+    environment:
+      - DEBUG_MSG=Hello World
